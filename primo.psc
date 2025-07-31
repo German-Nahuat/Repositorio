@@ -1,16 +1,16 @@
 Algoritmo primo
-	Escribir "dame un numero entero"
-	Leer numeroIngresado;
-	iteracion=1;
-	Mientras iteracion <= numeroIngresado Hacer
-		si(numeroIngresado%iteracion==0) Entonces
-			divisionResiduoCero=divisionResiduoCero+1;
+	Escribir 'dame un numero entero'
+	Leer numeroIngresado
+	iteracion <- 1
+	Mientras iteracion<=numeroIngresado Hacer
+		Si (numeroIngresado MOD iteracion==0) Entonces
+			divisionResiduoCero <- divisionResiduoCero+1
 		FinSi
-		iteracion=iteracion+1
+		iteracion <- iteracion+1
 	FinMientras
-	si(divisionResiduoCero==2)Entonces
-		Escribir "es primo"
+	Si (divisionResiduoCero==2) Entonces
+		Escribir 'es primo'
 	SiNo
-		Escribir "no es primo"
+		Escribir 'no es primo'
 	FinSi
 FinAlgoritmo
